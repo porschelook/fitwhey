@@ -1,9 +1,10 @@
-import { Tabs } from "../App";
+import { Tabs } from "../layout.jsx";
 
+type tabButtonStyle = "Overview" | "Benefit" | "Direction" | "Storage Medthod" | "Cautions" | "Q&A";
 interface TabButtonProps {
-  text: Tabs;
-  currentTab: Tabs;
-  setCurrentTab: React.Dispatch<React.SetStateAction<Tabs>>;
+  text: tabButtonStyle;
+  currentTab: tabButtonStyle;
+  setCurrentTab: React.Dispatch<React.SetStateAction<tabButtonStyle>>;
 }
 
 export function TabButton(props: TabButtonProps) {

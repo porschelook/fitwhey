@@ -33,7 +33,8 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { colors } from "@mui/material";
 import MessageIcon from "@mui/icons-material/Message";
-export type Tabs = "ALL" | "ACTIVE" | "COMPLETED";
+
+import { styled } from "@mui/material/styles";
 import AddToCartModal from "./components/AddToCartModal";
 interface Image {
   id: number;
@@ -133,7 +134,7 @@ export default function Home() {
     console.log("View Supplement Fact");
   };
 
-  
+
   const handleChange = (
     event: React.MouseEvent<HTMLElement>,
     newAlignment: string
